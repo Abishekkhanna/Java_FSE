@@ -1,26 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --primary: #944E63;
+  --accent: #B47B84;
+  --card-bg: #CAA6A6;
+  --light-bg: #FFE7E7;
+  --text-dark: #222;
+  --text-light: #fff;
+}
 body {
-  font-family: 'Segoe UI', sans-serif;
-  background-color: #f3f7fa;
+  font-family: 'Poppins', sans-serif;
+  background: var(--light-bg);
+  color: var(--text-dark);
+  min-height: 100vh;
 }
-
 .navbar {
-  background-color: #2b2d42 !important;
+  background: var(--card-bg) !important;
+  border-bottom: 1px solid #bbb;
 }
-
-.card {
+.navbar-brand {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-size: 2rem;
+  color: var(--primary) !important;
+}
+.nav-link {
+  font-weight: 500;
+  color: var(--text-dark) !important;
+}
+#welcomeBanner {
+  background: var(--accent);
+  color: white;
+  padding: 3rem 0;
+  margin: 2rem 0;
+  border-radius: 10px;
+}
+.highlight {
+  background: var(--card-bg);
+  padding: 0.2em 0.5em;
+  border-radius: 8px;
+  color: white;
+  font-weight: 600;
+}
+#recent{
+  color: var(--text-dark);
+}
+.eventCard {
+  background: var(--card-bg);
+  border-radius: 10px;
+  padding: 1.5rem;
+  margin: 1rem 0;
+  border: 1px solid #bbb;
+}
+.event-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+.form-container {
+  background: var(--card-bg);
+  border-radius: 10px;
+  padding: 2rem;
+}
+.form-control {
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  padding: 0.8rem 1rem;
+  background: #fff;
+  color: var(--text-dark);
+}
+.btn-primary {
+  background: var(--primary);
   border: none;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
-  transition: transform 0.2s ease-in-out;
+  border-radius: 8px;
+  padding: 0.8rem 2rem;
+  font-weight: 600;
+  color: white;
+  cursor: pointer;
 }
-
-.card:hover {
-  transform: translateY(-4px);
+.table {
+  background: var(--card-bg);
+  border-radius: 10px;
+  overflow: hidden;
 }
-
-h2, h3 {
-  color: #2b2d42;
+.table th {
+  background: var(--primary);
+  color: white;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 1rem;
+  border: none;
 }
-
+.table td {
+  padding: 1rem;
+  border: 1px solid #ddd;
+  vertical-align: middle;
+}
+.table tbody tr:nth-child(even) {
+  background-color: #f8dede;
+}
+.news-section {
+  column-count: 2;
+  column-gap: 30px;
+  column-rule: 2px solid var(--primary);
+  text-align: justify;
+  line-height: 1.6;
+}
+video {
+  border-radius: 10px;
+  max-width: 100%;
+}
+.spinner {
+  display: none;
+}
+@media (max-width: 768px) {
+  .navbar-nav {
+    text-align: center;
+    margin-top: 1rem;
+  }
+  .news-section {
+    column-count: 1;
+  }
+  .eventCard {
+    margin: 0.5rem 0;
+  }
+  .event-image {
+    height: 150px;
+  }
+}
 footer {
-  background-color: #2b2d42;
+  background: var(--primary);
+  color: white;
+  padding: 3rem 0 1rem;
+  margin-top: 4rem;
+  text-align: center;
+}
+.modal-content {
+  border-radius: 10px;
+  border: none;
+  background: var(--card-bg);
+}
+.modal-header {
+  background: var(--accent);
+  color: white;
+  border-radius: 10px 10px 0 0;
 }
