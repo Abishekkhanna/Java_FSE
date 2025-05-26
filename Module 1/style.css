@@ -1,0 +1,26 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f3f7fa;
+}
+
+.navbar {
+  background-color: #2b2d42 !important;
+}
+
+.card {
+  border: none;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+h2, h3 {
+  color: #2b2d42;
+}
+
+footer {
+  background-color: #2b2d42;
+}
